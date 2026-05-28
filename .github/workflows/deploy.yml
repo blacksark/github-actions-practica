@@ -24,10 +24,11 @@ jobs: # Llista de tasques a executar
       - uses: actions/setup-python@v6 # Acció per configurar Python
         with:
           python-version: 3.x
-      - name: Install MkDocs
-        run: pip install mkdocs
-      - name: Build
-        run: mkdocs build
+          cache: 'pip'
+      - name: Install dependencies # Acció per instal·lar les dependències
+        run: pip install -r requirements.txt
+      - name: Build # Acció per compilar la documentació
+        run: properdocs build --clean
       - name: Upload static files as artifact # Acció per pujar els fitxers estàtics com a artefacte
         uses: actions/upload-pages-artifact@v5
         with:
