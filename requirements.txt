@@ -1,3 +1,4 @@
 mkdocs
 properdocs
 properdocs-theme-mkdocs
+mkdocs-material

@@ -1,1 +1,9 @@
-site_name: My Docs
+site_name: Projecte ASIR
+
+theme:
+  name: material
+
+nav:
+  - Inici: index.md
+  - Linux: linux.md
+
