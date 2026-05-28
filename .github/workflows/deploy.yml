@@ -24,7 +24,6 @@ jobs: # Llista de tasques a executar
       - uses: actions/setup-python@v6 # Acció per configurar Python
         with:
           python-version: 3.x
-          cache: 'pip'
       - name: Install MkDocs
         run: pip install mkdocs
       - name: Build
